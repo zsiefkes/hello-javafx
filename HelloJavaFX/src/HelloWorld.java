@@ -10,14 +10,19 @@ public class HelloWorld extends Application {
     public void start(Stage primaryStage) throws Exception {
         //Create a scene for the window with the text inside it
     	Scene scene = new Scene(new Group(new Text(25, 25, "Hello World!")));
-        //Set title of the window
-        primaryStage.setTitle("Hello World!");
+        
+    	//Set title of the window
+        primaryStage.setTitle("Wassup mofo");
          
         //Add scene to the window (underneath the window bar)
         primaryStage.setScene(scene);
          
         //Change size of window to fit text
-        primaryStage.sizeToScene();
+//        primaryStage.sizeToScene();
+        
+        // Set default size
+        primaryStage.setWidth(200);
+        primaryStage.setHeight(150);
         
         //Show the window
         primaryStage.show();
